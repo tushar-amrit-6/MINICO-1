@@ -17,11 +17,14 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+    // User app context
     @Test
     public void useAppContext() {
         // Context of the app under test.
+        // creating object for getting context of target.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-
+        
+        //assertion which checks the package name
         assertEquals("com.example.recyclerview", appContext.getPackageName());
     }
 }
